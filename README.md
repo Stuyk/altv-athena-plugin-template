@@ -12,7 +12,7 @@ From the root directory of Athena, install it in the following path:
 
 Removing the `disable.plugin` file **will enable this plugin template**.
 
-## package.json
+## dependencies.json
 
 Only add `dependencies` and `devDependencies` to your package.json
 
