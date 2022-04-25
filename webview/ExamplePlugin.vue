@@ -5,17 +5,14 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-// Global Components
-import Icon from '@components/Icon.vue';
-import Button from '@components/Button.vue';
+import { defineComponent, defineAsyncComponent } from 'vue';
 
 export const ComponentName = 'ExamplePlugin';
 export default defineComponent({
     name: ComponentName,
     components: {
-        Button,
-        Icon,
+        Button: defineAsyncComponent(() => import('@components/Button.vue')),
+        Icon:  defineAsyncComponent(() => import('@components/Icon.vue')),
     },
     data() {
         return {};
